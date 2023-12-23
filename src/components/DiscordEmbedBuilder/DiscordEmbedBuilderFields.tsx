@@ -42,7 +42,9 @@ export function DiscordEmbedBuilderFields({
   }
 
   function moveFieldUp(index: number) {
-    if (index === 0) return;
+    if (index === 0) {
+      return;
+    }
 
     setEmbedData((prev) => {
       const fields = prev.fields || [];
@@ -62,7 +64,9 @@ export function DiscordEmbedBuilderFields({
   }
 
   function moveFieldDown(index: number) {
-    if (index === (embedData.fields?.length || 0) - 1) return;
+    if (index === (embedData.fields?.length || 0) - 1) {
+      return;
+    }
 
     setEmbedData((prev) => {
       const fields = prev.fields || [];

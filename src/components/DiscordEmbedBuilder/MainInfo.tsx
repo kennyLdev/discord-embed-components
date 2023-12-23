@@ -3,7 +3,7 @@ import * as React from "react";
 import { colorHexToInt } from "../../utils/colorHexToInt";
 import { colorIntToHex } from "../../utils/colorIntToHex";
 import { Dispatch, SetStateAction } from "react";
-import { EmbedInput } from "./EmbedInput";
+import { DiscordEmbedBuilderEmbedInput } from "./EmbedInput";
 import { type EmbedData } from "discord.js";
 
 interface DiscordEmbedBuilderMainInfoProps {
@@ -20,7 +20,7 @@ export function DiscordEmbedBuilderMainInfo({
       <h3 className="text-xl">Main Information</h3>
 
       <div className="grid grid-cols-1 gap-x-4 gap-y-2 sm:grid-cols-6">
-        <EmbedInput
+        <DiscordEmbedBuilderEmbedInput
           id="author-name"
           label="Author Name"
           value={embedData.author?.name || ""}
@@ -35,7 +35,7 @@ export function DiscordEmbedBuilderMainInfo({
           }}
         />
 
-        <EmbedInput
+        <DiscordEmbedBuilderEmbedInput
           id="author-url"
           label="Author URL"
           value={embedData.author?.url || ""}
@@ -50,7 +50,7 @@ export function DiscordEmbedBuilderMainInfo({
           }}
         />
 
-        <EmbedInput
+        <DiscordEmbedBuilderEmbedInput
           id="author-icon"
           label="Author Icon"
           value={embedData.author?.iconURL || ""}
@@ -65,7 +65,7 @@ export function DiscordEmbedBuilderMainInfo({
           }}
         />
 
-        <EmbedInput
+        <DiscordEmbedBuilderEmbedInput
           id="embed-title"
           label="Embed Title"
           value={embedData.title || ""}
@@ -77,7 +77,7 @@ export function DiscordEmbedBuilderMainInfo({
           }}
         />
 
-        <EmbedInput
+        <DiscordEmbedBuilderEmbedInput
           id="embed-description"
           label="Embed Description"
           value={embedData.description || ""}
@@ -89,7 +89,7 @@ export function DiscordEmbedBuilderMainInfo({
           }}
         />
 
-        <EmbedInput
+        <DiscordEmbedBuilderEmbedInput
           id="embed-url"
           label="Embed URL"
           value={embedData.url || ""}
@@ -101,7 +101,7 @@ export function DiscordEmbedBuilderMainInfo({
           }}
         />
 
-        <EmbedInput
+        <DiscordEmbedBuilderEmbedInput
           id="image-url"
           label="Image URL"
           value={embedData.image?.url || ""}
@@ -116,7 +116,7 @@ export function DiscordEmbedBuilderMainInfo({
           }}
         />
 
-        <EmbedInput
+        <DiscordEmbedBuilderEmbedInput
           id="thumbnail-url"
           label="Thumbnail URL"
           value={embedData.thumbnail?.url || ""}
@@ -131,7 +131,7 @@ export function DiscordEmbedBuilderMainInfo({
           }}
         />
 
-        <EmbedInput
+        <DiscordEmbedBuilderEmbedInput
           id="footer"
           label="Footer"
           value={embedData.footer?.text || ""}
@@ -146,7 +146,7 @@ export function DiscordEmbedBuilderMainInfo({
           }}
         />
 
-        <EmbedInput
+        <DiscordEmbedBuilderEmbedInput
           id="footer-icon-url"
           label="Footer Icon URL"
           value={embedData.footer?.iconURL || ""}
@@ -161,7 +161,7 @@ export function DiscordEmbedBuilderMainInfo({
           }}
         />
 
-        <EmbedInput
+        <DiscordEmbedBuilderEmbedInput
           id="embed-color"
           label="Embed Color"
           type="color"

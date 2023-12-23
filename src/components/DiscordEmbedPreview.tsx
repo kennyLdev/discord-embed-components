@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import "@discord-components/react/dist/style.css";
-import { colorIntToHex } from "../../utils/colorIntToHex";
+import { colorIntToHex } from "../utils/colorIntToHex";
 import { EmbedData } from "discord.js";
 
 import {

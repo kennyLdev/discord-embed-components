@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { classNames } from "../../utils/classNames";
 
-interface EmbedInputProps {
+interface DiscordEmbedBuilderEmbedInputProps {
   id: string;
   label: string;
   width?: number;
@@ -11,14 +11,14 @@ interface EmbedInputProps {
   setValue: (value: string) => void;
 }
 
-export function EmbedInput({
+export function DiscordEmbedBuilderEmbedInput({
   id,
   label,
   width = 3,
   type = "text",
   value,
   setValue,
-}: EmbedInputProps) {
+}: DiscordEmbedBuilderEmbedInputProps) {
   return (
     <div className={`sm:col-span-${width}`}>
       <label

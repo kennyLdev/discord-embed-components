@@ -1,7 +1,7 @@
 import * as React from "react";
 
-import { DiscordEmbedBuilderFields } from "./DiscordEmbedBuilderFields";
-import { DiscordEmbedBuilderMainInfo } from "./DiscordEmbedBuilderMainInfo";
+import { DiscordEmbedBuilderFields } from "./Fields";
+import { DiscordEmbedBuilderMainInfo } from "./MainInfo";
 import { Dispatch, SetStateAction } from "react";
 import { type EmbedData } from "discord.js";
 

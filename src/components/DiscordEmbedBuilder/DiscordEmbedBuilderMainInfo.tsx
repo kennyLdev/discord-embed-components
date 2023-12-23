@@ -21,19 +21,6 @@ export function DiscordEmbedBuilderMainInfo({
 
       <div className="grid grid-cols-1 gap-x-4 gap-y-2 sm:grid-cols-6">
         <EmbedInput
-          id="embed-color"
-          label="Embed Color"
-          type="color"
-          value={colorIntToHex(embedData.color || 0)}
-          setValue={(value) => {
-            setEmbedData((prev) => ({
-              ...prev,
-              color: colorHexToInt(value),
-            }));
-          }}
-        />
-
-        <EmbedInput
           id="author-name"
           label="Author Name"
           value={embedData.author?.name || ""}
@@ -170,6 +157,19 @@ export function DiscordEmbedBuilderMainInfo({
                 ...prev.footer,
                 iconURL: value,
               },
+            }));
+          }}
+        />
+
+        <EmbedInput
+          id="embed-color"
+          label="Embed Color"
+          type="color"
+          value={colorIntToHex(embedData.color || 0)}
+          setValue={(value) => {
+            setEmbedData((prev) => ({
+              ...prev,
+              color: colorHexToInt(value),
             }));
           }}
         />

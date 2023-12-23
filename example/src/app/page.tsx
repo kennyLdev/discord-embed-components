@@ -25,9 +25,11 @@ export default function Home() {
         />
       </div>
 
-      <div className="mb-2">
-        <DiscordEmbedPreview embedData={embedData} />
-      </div>
+      {Object.keys(embedData).length > 0 && (
+        <div className="mb-2">
+          <DiscordEmbedPreview embedData={embedData} />
+        </div>
+      )}
 
       <div className="mb-2">
         <input

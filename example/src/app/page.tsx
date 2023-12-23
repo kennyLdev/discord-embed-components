@@ -18,9 +18,8 @@ export default function Home() {
         Discord Embed Components Test
       </h1>
 
-      <div className="mb-2">
+      <div className="mb-2 p-4 bg-gray-800 text-white sm:rounded-md">
         <DiscordEmbedBuilder
-          className="p-4 bg-gray-800 text-white sm:rounded-md"
           embedData={embedData}
           setEmbedData={setEmbedData}
         />

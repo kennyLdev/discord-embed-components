@@ -1,5 +1,8 @@
-import { EmbedData } from "discord.js";
 import * as React from "react";
+
+import "@discord-components/react/dist/style.css";
+import { colorIntToHex } from "../../utils/colorIntToHex";
+import { EmbedData } from "discord.js";
 
 import {
   DiscordMessage,
@@ -8,8 +11,6 @@ import {
   DiscordEmbedField,
   DiscordEmbed,
 } from "@discord-components/react";
-import "@discord-components/react/dist/style.css";
-import { colorIntToHex } from "../../utils/colorIntToHex";
 
 interface DiscordEmbedPreviewProps {
   embedData: EmbedData;

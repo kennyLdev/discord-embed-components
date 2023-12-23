@@ -1,7 +1,8 @@
 import * as React from "react";
-import { type EmbedData } from "discord.js";
+
 import { Dispatch, SetStateAction } from "react";
 import { Switch } from "@headlessui/react";
+import { type EmbedData } from "discord.js";
 
 import {
   XMarkIcon,

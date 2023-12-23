@@ -1,11 +1,9 @@
 import * as React from "react";
-import { EmbedInput } from "./EmbedInput";
-import { type EmbedData } from "discord.js";
-import { Dispatch, SetStateAction } from "react";
-import { colorHexToInt } from "../../utils/colorHexToInt";
-import { colorIntToHex } from "../../utils/colorIntToHex";
-import { DiscordEmbedBuilderMainInfo } from "./DiscordEmbedBuilderMainInfo";
+
 import { DiscordEmbedBuilderFields } from "./DiscordEmbedBuilderFields";
+import { DiscordEmbedBuilderMainInfo } from "./DiscordEmbedBuilderMainInfo";
+import { Dispatch, SetStateAction } from "react";
+import { type EmbedData } from "discord.js";
 
 interface DiscordEmbedBuilderProps {
   embedData: EmbedData;

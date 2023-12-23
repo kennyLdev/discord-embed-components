@@ -1,9 +1,10 @@
 import * as React from "react";
-import { EmbedInput } from "./EmbedInput";
-import { type EmbedData } from "discord.js";
-import { Dispatch, SetStateAction } from "react";
+
 import { colorHexToInt } from "../../utils/colorHexToInt";
 import { colorIntToHex } from "../../utils/colorIntToHex";
+import { Dispatch, SetStateAction } from "react";
+import { EmbedInput } from "./EmbedInput";
+import { type EmbedData } from "discord.js";
 
 interface DiscordEmbedBuilderMainInfoProps {
   embedData: EmbedData;

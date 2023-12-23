@@ -33,6 +33,8 @@ jobs:
 
       - name: Install and build
         run: |
+          pnpm install
+          pnpm build
           cd example
           pnpm install
           pnpm build

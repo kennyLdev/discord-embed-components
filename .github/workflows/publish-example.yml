@@ -33,9 +33,9 @@ jobs:
 
       - name: Install and build
         run: |
+          cd example
           pnpm install
           pnpm build
-        working-directory: ./example
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

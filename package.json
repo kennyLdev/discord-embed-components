@@ -8,9 +8,14 @@
     "build": "tsup",
     "dev": "tsup --watch"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["discord", "discord embed", "discord components"],
+  "repository": {
+    "url": "https://github.com/kennyLdev/discord-embed-components"
+  },
+  "homepage": "https://github.com/kennyLdev/discord-embed-components#readme",
+  "readme": "README.md",
+  "author": "kennyL LLC <info@kennyl.dev>",
+  "license": "MIT",
   "devDependencies": {
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",

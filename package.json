@@ -1,6 +1,6 @@
 {
   "name": "@kennyldev/discord-embed-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,7 +10,7 @@
   },
   "keywords": ["discord", "discord embed", "discord components"],
   "repository": {
-    "url": "https://github.com/kennyLdev/discord-embed-components"
+    "url": "git+https://github.com/kennyLdev/discord-embed-components"
   },
   "homepage": "https://github.com/kennyLdev/discord-embed-components#readme",
   "readme": "README.md",

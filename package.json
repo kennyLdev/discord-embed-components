@@ -24,5 +24,9 @@
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.1.1",
     "discord.js": "^14.14.1"
-  }
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
 }

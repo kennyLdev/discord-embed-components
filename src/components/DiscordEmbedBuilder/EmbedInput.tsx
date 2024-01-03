@@ -5,7 +5,6 @@ import { classNames } from "../../utils/classNames";
 interface DiscordEmbedBuilderEmbedInputProps {
   id: string;
   label: string;
-  width?: number;
   type?: string;
   value?: string;
   setValue: (value: string) => void;
@@ -14,13 +13,12 @@ interface DiscordEmbedBuilderEmbedInputProps {
 export function DiscordEmbedBuilderEmbedInput({
   id,
   label,
-  width = 3,
   type = "text",
   value,
   setValue,
 }: DiscordEmbedBuilderEmbedInputProps) {
   return (
-    <div className={`sm:col-span-${width}`}>
+    <div className="sm:col-span-3">
       <label
         htmlFor={id}
         className="block text-sm font-medium leading-6 text-white"

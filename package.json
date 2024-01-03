@@ -1,6 +1,6 @@
 {
   "name": "@kennyldev/discord-embed-components",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,7 +8,11 @@
     "build": "tsup",
     "dev": "tsup --watch"
   },
-  "keywords": ["discord", "discord embed", "discord components"],
+  "keywords": [
+    "discord",
+    "discord embed",
+    "discord components"
+  ],
   "repository": {
     "url": "git+https://github.com/kennyLdev/discord-embed-components"
   },

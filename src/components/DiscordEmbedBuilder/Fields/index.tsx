@@ -66,26 +66,25 @@ export function DiscordEmbedBuilderFields({
                 className="col-span-1 divide-y divide-gray-200 rounded-lg border-white/10 border bg-gray-900"
               >
                 <div>
-                  <div className="flex w-full items-center justify-between space-x-6 p-6">
-                    <div className="flex items-center space-x-3">
-                      <DiscordEmbedBuilderEmbedInput
-                        id={`field-${i}-name`}
-                        label="Name"
-                        value={field.name}
-                        setValue={(name) => {
-                          setFieldInput(i, "name", name);
-                        }}
-                      />
+                  <div className="p-4">
+                    <DiscordEmbedBuilderEmbedInput
+                      id={`field-${i}-name`}
+                      label="Name"
+                      value={field.name}
+                      setValue={(name) => {
+                        setFieldInput(i, "name", name);
+                      }}
+                    />
 
-                      <DiscordEmbedBuilderEmbedInput
-                        id={`field-${i}-value`}
-                        label="Value"
-                        value={field.value}
-                        setValue={(value) => {
-                          setFieldInput(i, "value", value);
-                        }}
-                      />
-                    </div>
+                    <DiscordEmbedBuilderEmbedInput
+                      id={`field-${i}-value`}
+                      label="Value"
+                      value={field.value}
+                      setValue={(value) => {
+                        setFieldInput(i, "value", value);
+                      }}
+                      className="mt-2"
+                    />
                   </div>
 
                   <div className="px-6 pb-4">

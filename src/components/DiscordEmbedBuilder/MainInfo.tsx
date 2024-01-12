@@ -45,6 +45,7 @@ export function DiscordEmbedBuilderMainInfo({
               author: {
                 ...prev.author,
                 url: value,
+                name: prev.author?.name || "",
               },
             }));
           }}
@@ -60,6 +61,7 @@ export function DiscordEmbedBuilderMainInfo({
               author: {
                 ...prev.author,
                 iconURL: value,
+                name: prev.author?.name || "",
               },
             }));
           }}
@@ -156,6 +158,7 @@ export function DiscordEmbedBuilderMainInfo({
               footer: {
                 ...prev.footer,
                 iconURL: value,
+                text: prev.footer?.text || "",
               },
             }));
           }}

@@ -8,6 +8,7 @@ interface DiscordEmbedBuilderEmbedInputProps {
   type?: string;
   value?: string;
   setValue: (value: string) => void;
+  className?: string;
 }
 
 export function DiscordEmbedBuilderEmbedInput({
@@ -16,9 +17,10 @@ export function DiscordEmbedBuilderEmbedInput({
   type = "text",
   value,
   setValue,
+  className,
 }: DiscordEmbedBuilderEmbedInputProps) {
   return (
-    <div className="sm:col-span-3">
+    <div className={`sm:col-span-3 ${className}`}>
       <label
         htmlFor={id}
         className="block text-sm font-medium leading-6 text-white"
